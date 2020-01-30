@@ -6,7 +6,11 @@ namespace Enum
     {
         static void Main(string[] args)
         {
-           
+            Console.WriteLine(OrderSize.SuperSize);
+            //Enum.GetValues(typeof(SpeciesEnum)).Length;
+            //int animalNumber = (int)Enum.Parse(typeof(OrderSize), "Dog");
+            int index = (int)OrderSize.Large;
+            Console.WriteLine(index);
         }
     }
 

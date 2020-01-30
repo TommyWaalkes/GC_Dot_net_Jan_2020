@@ -18,7 +18,7 @@ namespace FileIO
            
             List<string> countries;
             //You will have to change this for yourself
-
+            string filePath2 = @"C:\Users\Tommy\Desktop\2020 Jan Class Repo\File IO Breakout\New Text Document.txt";
             string filePath =@"Countries.txt";//@"C:\Users\Tommy\Desktop\File IO Breakout\Countries.txt";
             //string filePath = @"C:\Users\Tommy\Desktop\July 2019 Repo\Breakouts\File IO Breakout\Countries.txt";
             Console.WriteLine(filePath);
@@ -62,6 +62,7 @@ namespace FileIO
             }
             catch(Exception e)
             {
+                Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
             }
             //Where have we seen read and write before?
