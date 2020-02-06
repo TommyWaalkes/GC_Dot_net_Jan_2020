@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AnimalAbstract
 {
@@ -6,6 +7,10 @@ namespace AnimalAbstract
     {
         static void Main(string[] args)
         {
+            Shrimp sh = new Shrimp();
+            Console.WriteLine("Shrimp Facts");
+            sh.PrintFood();
+            Console.WriteLine("The Shrimp goes " + sh.MakeSound());
             Console.WriteLine("Narwhal Facts");
             Narwhal n = new Narwhal("Nelly");
             Console.WriteLine( n.MakeSound());
@@ -54,6 +59,10 @@ namespace AnimalAbstract
             r.PrintFood();
             Console.WriteLine(h.GetFood());
             Console.WriteLine(h.MakeSound());
+            List<Animal> animals = new List<Animal>();
+            animals.Add(sh);
+            animals.Add(s);
+            
         }
     }
 }

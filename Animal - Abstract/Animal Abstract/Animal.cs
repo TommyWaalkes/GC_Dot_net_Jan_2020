@@ -9,6 +9,12 @@ namespace AnimalAbstract
     abstract class Animal
     {
         protected string name;
+
+        //public Animal(string name)
+        //{
+        //    this.name = name;
+        //}
+
         public virtual string MakeSound()
         {
             return "Not much is known about this animal!";

@@ -7,6 +7,11 @@ namespace AnimalInterface
     {
         static void Main(string[] args)
         {
+            Shrimp sh = new Shrimp();
+            Console.WriteLine(sh);
+
+            Cat meow = new Cat();
+            Console.WriteLine(meow);
             Kola k = new Kola();
             Console.WriteLine(k.GetFood());
             Console.WriteLine(k.MakeSound());

@@ -12,7 +12,7 @@ namespace AnimalAbstract
         
         public VelociaRaptor()
         {
-            base.name = "Raptor";
+            name = "Raptor";
         }
 
         public override string GetFood()

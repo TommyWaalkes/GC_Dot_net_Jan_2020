@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace AnimalAbstract
 {
-    class Cat : Animal
+    class Shrimp : Animal
     {
-
+        public Shrimp()
+        {
+            base.name = "Craig the Shrimp";
+        }
         public override string GetFood()
         {
-            return "mice";
+            return "Plant matter and dead fish";
         }
-
         public override string MakeSound()
         {
-            return "meow";
+            return "snapping sounds";
         }
 
     }
