@@ -6,6 +6,7 @@ namespace Lab13RPS
     {
         static void Main(string[] args)
         {
+            RPSApp app = new RPSApp();
             Rocky r = new Rocky();
             //Console.WriteLine(r.GetRPS());
 
