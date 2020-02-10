@@ -44,7 +44,7 @@ namespace Lab13RPS
             Console.WriteLine("Opponents turn");
             RPS p2throw = Player2.GetRPS();
             Console.WriteLine(p2throw);
-
+            DecideWinner((int)p1throw, (int)p2throw);
             while (true)
             {
                 Console.WriteLine("Would you like to play again? Y/N");
@@ -66,5 +66,29 @@ namespace Lab13RPS
                 }
             }
         }
+
+
+
+        public void DecideWinner(int p1Throw, int p2Throw)
+        {
+            int[,] array2D = new int[3, 3] { { 0, -1, 1 }, { 1, 0, -1 }, { -1, 1, 0 } };
+            int result = array2D[p1Throw, p2Throw];
+
+            if (result == 0)
+            {
+                Console.WriteLine("It was a draw!");
+            }
+            else if (result == 1)
+            {
+                Console.WriteLine("You win!");
+            }
+
+            else
+            {
+                Console.WriteLine($"{Player2.Name} wins!");
+            }
+        }
+
+
     }
 }
