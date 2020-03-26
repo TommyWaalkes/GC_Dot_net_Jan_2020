@@ -1,10 +1,10 @@
 ﻿@model FirstMVCApp.Models.User
 
 @{
-    ViewData["Title"] = "User";
+    ViewData["Title"] = "UserError";
 }
 
-<h2>User</h2>
+<h2>Something went wrong trying to login your user</h2>
 
 <div>
     <h4>User</h4>
@@ -14,6 +14,7 @@
             @Html.DisplayNameFor(model => model.UserName)
         </dt>
         <dd>
+            
             @Html.DisplayFor(model => model.UserName)
         </dd>
         <dt>
@@ -21,6 +22,12 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Age)
         </dd>
     </dl>
 </div>

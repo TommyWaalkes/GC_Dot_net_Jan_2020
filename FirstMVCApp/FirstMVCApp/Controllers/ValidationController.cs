@@ -20,16 +20,22 @@ namespace FirstMVCApp.Controllers
             return View();
         }
 
-        public IActionResult UserResult(User u)
+        [HttpPost]
+        public IActionResult DataAno(User u)
         {
             if (ModelState.IsValid)
             {
-                return View(u);
+                return RedirectToAction("UserResult", u);
             }
             else
             {
-                return RedirectToAction("Error");
+                return View(u);
             }
+        }
+
+        public IActionResult UserResult(User u)
+        {  
+            return View(u);
         }
 
         public IActionResult ControllerSide()
@@ -72,5 +78,6 @@ namespace FirstMVCApp.Controllers
         {
             return View();
         }
+
     }
 }

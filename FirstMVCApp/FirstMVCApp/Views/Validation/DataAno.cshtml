@@ -1,13 +1,17 @@
-﻿<h1>Data Annotations Demo</h1>
-<p>Crap this form is broken and nothing is showing up on the results page? What do?</p>
-<form action="UserResult" method="get">
+﻿@model User
+
+<h1>Data Annotations Demo</h1>
+<div asp-validation-summary="All" class="text-danger"></div>
+<form method="get">
     <h2>UserName</h2>
-    <input name="UserName" type="text"/>
+    @Html.Editor("UserName")
+
+
 
     <h2>Password</h2>
-    <input name="Password" type="password"/>
+    @Html.Editor("Password")
 
     <h2>Age</h2>
-    <input name="Age" type="number"/>
-    <input type="submit"/>
+    @Html.Editor("Age")
+    <input type="submit" />
 </form>
