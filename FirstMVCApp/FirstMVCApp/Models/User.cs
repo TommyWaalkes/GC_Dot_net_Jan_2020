@@ -21,6 +21,7 @@ namespace FirstMVCApp.Models
 
         [Range(18, 99, ErrorMessage = "Age must be between 18 and 99")]
         public int Age { get; set; }
+        
     }
 
    

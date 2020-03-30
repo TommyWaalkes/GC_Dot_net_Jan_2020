@@ -6,6 +6,7 @@ using FirstMVCApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace FirstMVCApp.Controllers
 {
     public class StateManagementController : Controller
@@ -37,6 +38,13 @@ namespace FirstMVCApp.Controllers
 
         public IActionResult SetColor()
         {
+            return View();
+        }
+
+        public IActionResult Session()
+        {
+            HttpContext.Session.SetString("Fine Dining", "Taco Bell");
+            ViewBag.sess = HttpContext.Session.GetString("Fine Dining");
             return View();
         }
 
